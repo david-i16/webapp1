@@ -1,0 +1,39 @@
+<!-- form handling -->
+<form action="/api/users" method="POST" enctype="multipart/form-data" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="image" class="text-light">Profile Picture<br><br></label>
+            <div id="chooseImg">
+                Choose File
+                <input type="file" id="image" name="image" accept="image/*" class="hide_file">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light"><br><br>Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Mark Harris">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Email</label>
+            <input type="text" name="email" value="" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Gender</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-1" name="gender" value="Male" >
+                <label for="radio-1" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Female" >
+                <label for="radio-2" class="radio-label">Female</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="favorite_movies" class="text-light">Favorite Movies</label>
+            <textarea name="favorite_movies" placeholder="Avengers: Age of Ultron&#10Shrek&#10..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
